@@ -106,34 +106,24 @@ $ npm i --save @fortawesome/pro-duotone-svg-icons
 ```
 
 ## Usage
+There are two ways you can use Font Awesome 5 with React. We'll summarize both ways briefly and then get into the details of each below.
 
-You can use Font Awesome icons in your React components as simply as this:
-
-```javascript
-<FontAwesomeIcon icon="coffee" />
-```
-
-That simple usage is made possible when you add the `"coffee"` icon, to the
-_library_.
-
-This is one of the two ways you can use Font Awesome 5 with React. We'll
-summarize both ways briefly and then get into the details of each below.
-
-1.  **Explicit Import**
+1.  **Individual Use**
 
     Allows icons to be subsetted, optimizing your final bundle. Only the icons
     you import are included in the bundle. However, explicitly importing icons
     into each of many components in your app might become tedious, so you may
-    want to build a library.
+    want to build a library. Using this method looks something like this:
 
-2.  **Build a Library**
+`<FontAwesomeIcon icon={faCoffee} />`
 
-    Explicitly import icons just once in some init module. Then add them to the
-    library. Then reference any of them by icon name as a string from any
-    component. No need to import the icons into each component once they're in
-    the library.
+2.  **Global Use**
 
-### Explicit Import
+Individually import icons just once in an init module. Then add them to the library and reference any of them by icon name as a string from any component in your project. No need to import the icons into each component once they've been added to the library. Using this method looks something like this:
+
+`<FontAwesomeIcon icon={["fas", "coffee"]} />`
+
+    ### Individual Use
 
 For this example, we'll also reference the `@fortawesome/free-solid-svg-icons`
 module, so make sure you've added it to the project as well:
@@ -167,7 +157,7 @@ Notice that the `faCoffee` icon is imported from
 Explicitly importing icons like this allows us to subset Font Awesome's
 thousands of icons to include only those you use in your final bundled file.
 
-### Build a Library to Reference Icons Throughout Your App More Conveniently
+### Global Use
 
 You probably want to use our icons in more than one component in your app,
 right?
