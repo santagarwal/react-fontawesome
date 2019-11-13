@@ -293,12 +293,13 @@ The `icon` prop expects a single object:
 
 #### Library Abreviations Table
 
-| fab | Font Awesome Business |
-|-----|-----------------------|
-| fas | Font Awesome Solid    |
-| fal | Font Awesome Lite     |
-| far | Font Awesome Regular  |
-| fad | Font Awesome Duotone  |
+| Abreviation | Library Full Name     |
+|-------------|-----------------------|
+| fab         | Font Awesome Business |
+| fas         | Font Awesome Solid    |
+| fal         | Font Awesome Lite     |
+| far         | Font Awesome Regular  |
+| fad         | Font Awesome Duotone  |
 
 
 ### Unit Testing
