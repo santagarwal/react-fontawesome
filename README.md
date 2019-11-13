@@ -161,11 +161,11 @@ thousands of icons to include only those you use in your final bundled file.
 
 You probably want to use our icons in more than one component in your app,
 right?
-
-But with explicit importing, it could become tedious to import into each of
+ 
+But with individual use, it could become tedious to import into each of
 your app's components every icon you want to reference in that component.
 
-So, add them to the _library_. Do this setup once in some initializing module
+So, add them to the _library_. Do this setup once in the initializing module
 of your app, adding all of the icons you'll use in your app's React components.
 
 Suppose `App.js` initializes my app, including the library. For this example,
