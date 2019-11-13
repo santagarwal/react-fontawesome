@@ -291,6 +291,16 @@ The `icon` prop expects a single object:
 - Or it could be an `Array` of strings, where the first element is a prefix,
   and the second element is the icon name: `{["fab", "apple"]}`
 
+#### Library Abreviations Table
+
+| fab | Font Awesome Business |
+|-----|-----------------------|
+| fas | Font Awesome Solid    |
+| fal | Font Awesome Lite     |
+| far | Font Awesome Regular  |
+| fad | Font Awesome Duotone  |
+
+
 ### Unit Testing
 
 When testing components, you'll want to make sure that any icons referenced in those components are available for testing purposes. You have a couple choices here:
