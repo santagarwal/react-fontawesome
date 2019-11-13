@@ -550,6 +550,10 @@ library.add(fasFaStroopwafel, farFaStroopwafel)
 
 Check out our [docs here](https://fontawesome.com/how-to-use/with-the-api/other/tree-shaking).
 
+### I'm getting a Babel/Babel-loader error when using React Font Awesome, how do I fix it?
+
+Make sure your up to date on the latest versions by running `brew update` & `brew upgrade` on your Mac. Or delete your package.json.lock file & Node_Modules folder and then run either `npm i` or `yarn install` to reinstall all packages and dependencies.
+
 ## How to Help
 
 Review the following docs before diving in:
